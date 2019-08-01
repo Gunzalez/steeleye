@@ -1,0 +1,17 @@
+should do
+--------
+Should draw a red rectangle with a list of links in it
+
+
+syntax
+--------
+Missing closing React.Fragment tag
+Missing super(props) call
+missing default props set
+overkill for use of state
+missing key on repeated property 
+
+
+---
+add in propType for added validity
+change to stateless component

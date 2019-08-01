@@ -2,23 +2,29 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+import SomeListComponent from './components/someListComponent';
+
+const someProps = {
+  items: [
+    {text: 'Skating'}, 
+    { text: 'Burnt'}, 
+    { text: 'Fingers'}
+  ],
+  listDetails: {
+    size: {
+      height: 700,
+      width: 600
+    }
+  },
+  onClick: function(item){
+    console.log('App says hi: ', item);
+  }
+}
+
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <SomeListComponent {...someProps} />  
     </div>
   );
 }
