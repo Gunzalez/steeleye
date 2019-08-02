@@ -1,12 +1,11 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 import SomeListComponent from './components/someListComponent';
 
-const someProps = {
+const exampleProps = {
   items: [
-    {text: 'Skating'}, 
+    { text: 'Skating'}, 
     { text: 'Burnt'}, 
     { text: 'Fingers'}
   ],
@@ -17,14 +16,14 @@ const someProps = {
     }
   },
   onClick: function(item){
-    console.log('App says hi: ', item);
+    alert('You clicked on item: ' + item);
   }
 }
 
 function App() {
   return (
     <div className="App">
-      <SomeListComponent {...someProps} />  
+      <SomeListComponent {...exampleProps} />  
     </div>
   );
 }

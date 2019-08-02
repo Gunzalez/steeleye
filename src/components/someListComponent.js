@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 class SomeListComponent extends React.Component {
 
@@ -40,6 +41,7 @@ class SomeListComponent extends React.Component {
 
 export default SomeListComponent
 
+// This to prevent errors in run time
 SomeListComponent.defaultProps = {
   items: [{text: 'Frog'}, { text: 'Limp'}],
   listDetails: {
@@ -51,4 +53,11 @@ SomeListComponent.defaultProps = {
   onClick: function(item){
     console.log(item);
   }
+}
+
+// This to detect errors when developing
+SomeListComponent.propTypes = {
+  listDetails: PropTypes.object.isRequired,
+  onClick: PropTypes.func.isRequired,
+  items: PropTypes.array.isRequired
 }

@@ -1,17 +1,22 @@
-should do
+What the code does
 --------
-Should draw a red rectangle with a list of links in it
+Should draw a red rectangle with a list of words, each word has a click event
 
 
-syntax
+Problems
 --------
 Missing closing React.Fragment tag
 Missing super(props) call
-missing default props set
-overkill for use of state
-missing key on repeated property 
+No default props set (optional)
+Lack of propTypes to help document usage
+Missing key attribute on repeated item 
+No real use of state, overkill as Class component
 
 
+
+Changes
 ---
 add in propType for added validity
 change to stateless component
+add some unit tests
+display a friendly empty message when list is empty (depending on how it is used)
