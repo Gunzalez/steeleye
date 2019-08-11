@@ -25,7 +25,7 @@ class SomeListComponent extends React.Component {
     const listDetails = this.props.listDetails;
     let height;
     let width;
-    if (listDetails.hasOwnProperty('size') !== false) {
+    if (listDetails.hasOwnProperty('size')) {
         height = listDetails.size.height;
         width = listDetails.size.width;
     }

@@ -12,6 +12,9 @@ Lack of propTypes to help document usage
 Missing key attribute on repeated item 
 No real use of state, overkill as Class component
 
+comparing to a boolean is a code smell
+constructor is not needed
+extract list styles into some better than css written on tag
 
 
 Changes
